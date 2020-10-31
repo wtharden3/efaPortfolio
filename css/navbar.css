@@ -1,0 +1,10 @@
+.nav {
+  /* background-image: url('../assets/lilFlowersBg.jpg'); */
+  border: 1px solid black;
+  width: 20%;
+  height: 100vh;
+  position: relative;
+  z-index: 1000;
+  background-color: rgba(172, 165, 165, 0.877);
+  float: left;
+}

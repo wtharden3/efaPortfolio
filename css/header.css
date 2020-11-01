@@ -1,9 +1,9 @@
 .jumbotron {
   background-image: url('../assets/lilFlowersBg.jpg');
   background-size: cover;
-  height: 25vh;
+  height: 55vh;
   color: #fff;
-  width: 80%;
+  /* width: 80%;
   position: relative;
-  float: right;
+  float: right; */
 }

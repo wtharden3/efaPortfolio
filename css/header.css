@@ -3,7 +3,21 @@
   background-size: cover;
   /* min-height: 55vh; */
   color: #fff;
-  /* width: 80%;
+  z-index: 500;
   position: relative;
-  float: right; */
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.jumbotron-text {
+  position: relative;
+  z-index: 1500;
 }

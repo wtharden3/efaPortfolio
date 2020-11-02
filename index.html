@@ -20,27 +20,30 @@
     />
   </head>
   <body>
-    <!-- start nav -->
-    <!-- <ul class="nav flex-column">
-      <h1>Whitney Harden</h1>
-      <hr />
-      <h3>Web Developer</h3>
-      <hr />
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
-          >Disabled</a
-        >
-      </li>
-    </ul> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="#"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-link" href="#about_section">About</a>
+          <a class="nav-link" href="#projects_section">Projects</a>
+          <a class="nav-link" href="#contact_section">Contact Me</a>
+        </div>
+      </div>
+    </nav>
     <!-- END NAV -->
 
     <!-- start HEADER -->
@@ -50,10 +53,13 @@
     </div>
     <!-- end HEADER -->
 
-    <section class="about my-5">
+    <section id="about_section" class="about my-5">
       <div class="container">
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-12 mb-4">
+            <h2 class="text-center">About Me</h2>
+          </div>
+          <div class="col-12">
             <p>
               I was born in Detroit but I've been a resident of Indianapolis for
               9 years.
@@ -68,20 +74,18 @@
               stronger full stack developer.
             </p>
           </div>
-          <div class="col-sm-5"></div>
-          <div class="col-sm-3">placeholder</div>
         </div>
       </div>
     </section>
     <!-- end ABOUT -->
 
     <!-- START PROJECTS -->
-    <section class="projects my-5">
+    <section id="projects_section" class="projects my-5">
       <div class="container">
         <div class="row">
-          <h2 class="text-center col-12">Projects</h2>
+          <h2 class="text-center col-12 mb-4">Projects</h2>
           <div class="row mx-0">
-            <div class="col-sm-4 mb-3 mb-sm-5">
+            <div class="col-sm-6 col-lg-4 mb-5">
               <a href="https://wtharden3.github.io/mock_kast/">
                 <img
                   class="w-100 border"
@@ -93,7 +97,7 @@
                 Static Layout: title of projects description of project
               </div>
             </div>
-            <div class="col-sm-4 mb-3 mb-sm-5">
+            <div class="col-sm-6 col-lg-4 mb-5">
               <a href="https://codepen.io/wtharden3/pen/xxOxjRj">
                 <img
                   class="w-100 border"
@@ -105,7 +109,7 @@
                 Creature Assignment: description of project
               </div>
             </div>
-            <div class="col-sm-4 mb-3 mb-sm-5">
+            <div class="col-sm-6 col-lg-4 mb-5">
               <a href="https://wtharden3.github.io/pokeApi/">
                 <img
                   class="w-100 border"
@@ -117,7 +121,7 @@
                 API Challenge 1: title of projects description of project
               </div>
             </div>
-            <div class="col-sm-4 mb-3 mb-sm-5">
+            <div class="col-sm-6 col-lg-4 mb-5">
               <a href="https://wh-holiday-api.web.app">
                 <img
                   class="w-100 border"
@@ -145,7 +149,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-sm-4 mb-3 mb-sm-5">
+            <div class="col-sm-6 col-lg-4 mb-5">
               <a
                 href="https://elevenfifty.org/courses/full-time-immersive/web-development/"
               >
@@ -157,7 +161,7 @@
               </a>
               <div class="infoWrapper">Blue Badge TBA</div>
             </div>
-            <div class="col-sm-4 mb-3 mb-sm-5">
+            <div class="col-sm-6 col-lg-4 mb-3 mb-sm-5">
               <a
                 href="https://elevenfifty.org/courses/full-time-immersive/web-development/"
               >
@@ -176,8 +180,9 @@
     <!-- END PROJECTS -->
 
     <!-- START CONTACT -->
-    <section class="contact">
+    <section id="contact_section" class="contact">
       <div class="container">
+        <h2 class="text-center mb-4">Contact Me</h2>
         <form
           class="mx-auto"
           action="https://formspree.io/f/mbjpollp"
@@ -201,6 +206,7 @@
       </div>
     </section>
     <!-- END CONTACT -->
+    <footer>footer</footer>
     <!-- jQuery, Popper.js, and Bootstrap JS -->
     <!-- jQuery -->
     <script

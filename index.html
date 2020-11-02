@@ -80,11 +80,11 @@
       <div class="container">
         <div class="row">
           <h2 class="text-center col-12">Projects</h2>
-          <div class="row">
-            <div class="col-12 col-sm-4">
+          <div class="row mx-0">
+            <div class="col-sm-4 mb-3 mb-sm-5">
               <a href="https://wtharden3.github.io/mock_kast/">
                 <img
-                  class="w-100"
+                  class="w-100 border"
                   src="assets/thumbs/kast-thumbnail.png"
                   alt="Static Layout Application"
                 />
@@ -93,20 +93,81 @@
                 Static Layout: title of projects description of project
               </div>
             </div>
-            <div class="col-sm-4">
-              <a href="https://wtharden3.github.io/mock_kast/">
+            <div class="col-sm-4 mb-3 mb-sm-5">
+              <a href="https://codepen.io/wtharden3/pen/xxOxjRj">
                 <img
-                  class="w-100"
-                  src="assets/thumbs/kast-thumbnail.png"
+                  class="w-100 border"
+                  src="assets/thumbs/css-creature-thumbnail.png"
                   alt=""
                 />
               </a>
               <div class="infoWrapper">
-                Static Layout: title of projects description of project
+                Creature Assignment: description of project
               </div>
             </div>
-            <div class="col-sm-4">
-              <img src="" alt="" />
+            <div class="col-sm-4 mb-3 mb-sm-5">
+              <a href="https://wtharden3.github.io/pokeApi/">
+                <img
+                  class="w-100 border"
+                  src="assets/thumbs/pokeApi-thumbnail.png"
+                  alt=""
+                />
+              </a>
+              <div class="infoWrapper">
+                API Challenge 1: title of projects description of project
+              </div>
+            </div>
+            <div class="col-sm-4 mb-3 mb-sm-5">
+              <a href="https://wh-holiday-api.web.app">
+                <img
+                  class="w-100 border"
+                  src="assets/thumbs/holidayApi-thumbnail.png"
+                  alt=""
+                />
+              </a>
+              <div class="infoWrapper">
+                API Challenge 2: description of project, deployed using firebase
+                using the
+                <a href="https://calendarific.com/">Calendarific API</a>
+                <ul>
+                  <li>Pulled Data from API</li>
+                  <li>Utilized GET method only</li>
+                  <li>
+                    Used Bootstrap to style and make application visually
+                    appealing
+                  </li>
+                  <li>Deployed to Firebase</li>
+                  <li>Used some css styling for backgrounds</li>
+                  <li>
+                    Used OOP - Object Oriented Programming to further practice
+                    using classes, properties and methods
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-4 mb-3 mb-sm-5">
+              <a
+                href="https://elevenfifty.org/courses/full-time-immersive/web-development/"
+              >
+                <img
+                  class="w-100 border"
+                  src="assets/thumbs/blue-badge-thumbnail.png"
+                  alt="Eleven Fifty Web Developmemt Blue Badge TBA"
+                />
+              </a>
+              <div class="infoWrapper">Blue Badge TBA</div>
+            </div>
+            <div class="col-sm-4 mb-3 mb-sm-5">
+              <a
+                href="https://elevenfifty.org/courses/full-time-immersive/web-development/"
+              >
+                <img
+                  class="w-100 border"
+                  src="assets/thumbs/red-badge-thumbnail.png"
+                  alt="Eleven Fifty Web Developmemt Red Badge TBA"
+                />
+              </a>
+              <div class="infoWrapper">Red Badge TBA</div>
             </div>
           </div>
         </div>
@@ -116,20 +177,28 @@
 
     <!-- START CONTACT -->
     <section class="contact">
-      <form action="https://formspree.io/f/mbjpollp" method="POST">
-        <label>
-          Your email:
-          <input type="text" name="_replyto" />
-        </label>
-        <label>
-          Your message:
-          <textarea name="message"></textarea>
-        </label>
-
-        <!-- your other form fields go here -->
-
-        <button type="submit">Send</button>
-      </form>
+      <div class="container">
+        <form
+          class="mx-auto"
+          action="https://formspree.io/f/mbjpollp"
+          method="POST"
+        >
+          <div class="form-group mx-auto">
+            <label class="d-flex flex-column" for="yourEmail">
+              Your email:
+              <input type="text" id="yourEmail" name="_replyto" />
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="d-flex flex-column" for="yourMessage">
+              Your message:
+              <textarea id="yourMessage" name="message"></textarea>
+            </label>
+          </div>
+          <!-- your other form fields go here -->
+          <button class="btn btn-primary" type="submit">Send</button>
+        </form>
+      </div>
     </section>
     <!-- END CONTACT -->
     <!-- jQuery, Popper.js, and Bootstrap JS -->

@@ -1,19 +1,20 @@
-const hoverableimg = document.querySelector('.hoverableimg');
+const hoverableDiv = document.querySelector('.hoverableDiv');
 const hoverabletext = document.querySelector('.hoverabletext');
 
 let clicked = false;
 
-hoverableimg.addEventListener('mouseover', () => {
+hoverableDiv.addEventListener('mouseover', () => {
   // console.log(e);
   //reduce the opacity on the picture and have text pop up and be visible to read
   //display hoverabletext add class
-  hoverabletext.classList.toggle('d-none');
-});
-hoverableimg.addEventListener('mouseout', () => {
-  hoverabletext.classList.toggle('d-none');
+  hoverabletext.classList.remove('d-none');
+
+  hoverableDiv.addEventListener('mouseout', () => {
+    hoverabletext.classList.add('d-none');
+  });
 });
 
-hoverableimg.addEventListener('click', e => {
+hoverableDiv.addEventListener('click', e => {
   e.preventDefault();
   clicked = !clicked;
   console.log(clicked);
